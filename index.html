@@ -18,9 +18,10 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- github acitivity css -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
-    
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	<link rel="stylesheet" href="github-activity-0.1.5.min.css">	
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+	<script type="text/javascript" src="github-activity.min.js"></script>
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,7 +45,7 @@
                     <li><a href="https://github.com/Kevin-Conaghan"><i class="fa fa-github-alt"></i></a></li>                                 
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="/documentation/kevin-conaghan-cv.pdf"><i class="fa fa-archive"></i> CV Resume</a>              
+            <a class="btn btn-cta-primary pull-right" href="documentation/kevin-conaghan-cv.pdf"><i class="fa fa-archive"></i> CV Resume</a>              
         </div><!--//container-->
     </header><!--//header-->
     
@@ -69,7 +70,7 @@
                                 <h3 class="title"><a href="/documentation/proposal.pdf" target="_blank">Honours Project - Procedural Generation of Cities</a></h3>
                                 <p class="summary">Research into how procedural generation can enhance game production. For more info on my project you can click on the picture to view my proposal.</p>
                                 <div class="featured-image">
-                                    <a href= "/documentation/proposal.pdf">
+                                    <a href= "documentation/proposal.pdf">
                                     <img class="img-responsive project-image" src="assets/images/projects/city.png" alt="Honours Project"/>
                                     </a>
                                     <div class="ribbon">
@@ -77,12 +78,13 @@
                                     </div>                               
                                 <div class="desc text-left">                                    
                                     <p>My honours project is in the early stages of development right now but my proposal is available to view. </p>
-                                     <p><a class="more-link" href="/documentation/proposal.pdf"><i class="fa fa-external-link"></i>Proposal</a></p>
+                                     <p><a class="more-link" href="documentation/proposal.pdf"><i class="fa fa-external-link"></i>Proposal</a></p>
                                 </div><!--//desc-->                        
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="/documentation/gmd-report.pdf" target="_blank">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="documentation/gmd-report.pdf" target="_blank">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="documentation/gmd-report.pdf" target="_blank">
                                 <img class="img-responsive project-image" src="assets/images/projects/gameplay-mechanics.png" alt="Gameplay Mechanics" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
@@ -126,14 +128,15 @@
                         <div class="content">
                             <div class="item">
                                 <h3 class="title"><a href="vita.html">PS's Vita Augmented Reality</a></h3>
-                                <p class="summary">A module for this semester which asks us to create a game using the playstation vita and featuress the use of augmented reality. The module is currently ongoing and I will get some screenshots of my progress.</p>
-                                <p><a class="more-link" href= "assets/images/projects/vita_1.jpg" target="_blank"><i class="fa fa-external-link"></i>Screenshot</a></p>
+                                <p class="summary">A module for this semester which asks us to create a game using the playstation vita and featuress the use of augmented reality. The module asked us to adapt to a new framework and technology quickly to produce a fully funtional game. 
+													The game I managed to make fell short of what I wanted it to be but from this module I learned that if I planned a bit better and studied up more on the technology then I can make the best application possible. </p>
+                                <p><a class="more-link" href = "vita.html" target="_blank"><i class="fa fa-external-link"></i>Screenshots</a></p>
                             </div><!--//item-->
                             <div class="item">							
                                 <h3 class="title"><a href="https://kevin-conaghan.itch.io/ss-rapture" target="_blank">S.S Rapture - Moray Game Jam</a></h3>
                                 <p class="summary">I took part in the Moray Game Jam 2017 and my team and I created a horror game set in space. The programmers were unfamiliar with Unreal Engine, myself included, so we decided to develop the game in Unreal so we could learn how to use the engine.
 													This game was made entirely in blueprints as it was just a test to familiarise ourselves with the Unreal editor and the workflow.</p>
-								<p><a class="more-link" href="https://kevin-conaghan.itch.io/ss-rapture" target="_blank"><i class="fa fa-external-link"></i> ore Info</a></p>
+								<p><a class="more-link" href="https://kevin-conaghan.itch.io/ss-rapture" target="_blank"><i class="fa fa-external-link"></i> More Info</a></p>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><a href="https://twitter.com/DirtyKingdom">DK Project</a></h3>
@@ -156,18 +159,19 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="github section">
+				
+                <section class="github section">					
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget. You can also take a screenshot of your GitHub chart and put it here for fun.</p>
-                        <p><a href="#"><img class="img-responsive" src="assets/images/github-chart.png" alt="GitHub Contributions Chart" /></a></p>               
-                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
+						<div id="feed"></div>
+						<script src="caseyscarborough-github-activity/src/github-activity.js"></script>
+						<script>
+							GitHubActivity.feed({ username: "Kevin-Conaghan", selector: "#feed", limit: 5}); 
+						</script>
                     </div><!--//secton-inner-->
                 </section><!--//section-->
-            </div><!--//primary-->
+				</div><!--//primary-->
+				
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
                     <div class="section-inner">
@@ -186,10 +190,10 @@
                         <h2 class="heading">Skills</h2>
                         <div class="content">
                             <p class="intro">
-                                I have mainly worked in C++ for most of my modules and for my projects i tend to code in C#.</p>   
+                               </p>   
                             <div class="skillset">  
                                 <div class="item">
-                                    <h3 class="level-title">C++ &amp; C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Intermediate</span></h3>
+                                    <h3 class="level-title">C++ &amp; C#<span class="level-label"> Intermediate</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="80%">
                                         </div>                                      
@@ -199,7 +203,7 @@
                                 <div class="item">
                                     <h3 class="level-title"> Python<span class="level-label">Experienced</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="75%">
+                                        <div class="level-bar-inner" data-level="65%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
@@ -213,7 +217,7 @@
                                 </div><!--//item-->         
 
                                 <div class="item">
-                                    <h3 class="level-title">Unity &amp; Unreal Engine<span class="level-label">Intermediate/Expert</span></h3>
+                                    <h3 class="level-title">Unity &amp; Unreal Engine<span class="level-label">Intermediate</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="80%">
                                         </div>                                      
@@ -236,26 +240,12 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
                 
                 <aside class="blog aside section">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
                         <p> COMING SOON! </p>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
+                        <p></p>
                         <div id="rss-feeds" class="content">
 
                         </div><!--//content-->
@@ -273,8 +263,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->             
-              
-              
+                         
                 <aside class="volunteering aside section">
                     <div class="section-inner">
                         <h2 class="heading">Volunteering </h2>
@@ -285,7 +274,8 @@
                                 <img class="img-responsive project-image" src="assets/images/boxing.png" alt="Boxing"/>
                                 </a>
                                 <h3 class="title">UWCB Charity Boxing Event</h3>
-                                <p class="summary"> I am taking part in a charity boxing event in order to raise money for Cancer Research UK, I will be boxing on the 10th of November.</p>
+                                <p class="summary"> I am taking part in a charity boxing event in order to raise money for Cancer Research UK. The event took place on the 10th of November and I anaged to raise just over £500 in total.
+													All together the event raised a total of £6,500 which is an incredible amount and I was really glad I had the chance to be a part of that.</p>
                                    <p><a class="more-link" href="https://www.justgiving.com/fundraising/kevin-conaghan1" target="_blank"><i class="fa fa-external-link"></i> Just Giving Page</a></p>
                                 </div><!--//featured-image-->
                             </div><!--//item-->
