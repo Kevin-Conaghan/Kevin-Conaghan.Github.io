@@ -34,3 +34,5 @@ JQuery RSS - http://jquery.com/
 
 This template is free under the Creative Commons Attribution 3.0 License.
 https://creativecommons.org/licenses/by/3.0/
+
+You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds
